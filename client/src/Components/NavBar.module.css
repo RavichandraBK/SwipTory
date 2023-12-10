@@ -1,0 +1,214 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 8vmin;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.navText {
+  width: 100vmin;
+  margin-left: 3vmin;
+  font-family: DM Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.navBtns {
+  margin-left: 38vmin;
+  min-width: 60vmin;
+  display: flex;
+
+  align-items: center;
+}
+.profilePic {
+  margin-top: 1vmin;
+}
+.navRegister,
+.addStoryBtn,
+.bookmarkBtn {
+  width: 18.5vmin;
+  height: 6.1vmin;
+  border-radius: 20px;
+  background-color: #ff7373;
+  border: none;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.27rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.navSignIn {
+  width: 18.5vmin;
+  height: 6.1vmin;
+  border-radius: 20px;
+  margin-left: 2vmin;
+  background-color: #73abff;
+  border: none;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.27rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.desktopBookmark {
+  vertical-align: middle;
+}
+.desktopHamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  left: 170.2vmin;
+  position: absolute;
+  z-index: 1;
+  width: 32.3vmin;
+  height: 23.1vmin;
+  top: 8vmin;
+  background-color: #ff0;
+}
+.desktopHamburger > button {
+  width: 18.5vmin;
+  height: 6.1vmin;
+  border-radius: 20px;
+  background-color: #ff7373;
+  border: none;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.27rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.desktopHamburger > p {
+  font-size: 1.5em;
+  font-family: DM Sans;
+  font-weight: 700;
+
+  margin-top: 4vmin;
+  text-align: center;
+}
+.desktopHamburgerImage {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 391px) {
+  .nav {
+    justify-content: space-between;
+    height: 15vmin;
+  }
+  .navBtns {
+    width: 10vmin;
+    margin-left: 0vmin;
+    min-width: 60vmin;
+    justify-content: flex-end;
+  }
+  .mobileHamburgerImage {
+    margin-right: 5vmin;
+    cursor: pointer;
+  }
+  .navText {
+    margin-left: 1.2rem;
+    font-size: 1.5625rem;
+    line-height: 2rem;
+  }
+  .mobileHamburger {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: fit-content;
+    top: 15vmin;
+    background-color: #fff;
+  }
+
+  .mobileHamburger > div:nth-child(1) > span {
+    position: relative;
+    top: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    left: 22.2rem;
+    line-height: 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .mobileHamburgerChild2 {
+    height: 1.8rem;
+  }
+  .mobileHamburgerChild2 > img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0px;
+    margin-left: 3.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .mobileHamburgerChild2 > p {
+    display: inline;
+    margin-top: 0.5rem;
+    font-size: 1.1em;
+    font-family: DM Sans;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    line-height: 0.8rem;
+    text-align: center;
+  }
+  .mobileHamburgerChild3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vmin;
+    margin-top: 0px;
+  }
+  .mobileHamburgerChild3 > button {
+    width: 18.5vmax;
+    height: 6.1vmax;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff7373;
+
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+  .loginCheck {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vmin;
+    margin-top: 0px;
+  }
+  .loginCheck > button {
+    width: 18.5vmax;
+    height: 6.1vmax;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff7373;
+
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+  .mobileBookmark {
+    vertical-align: middle;
+  }
+  .mobileHamburgerChild3 > button:nth-child(3) {
+    font-size: 1rem;
+  }
+}
